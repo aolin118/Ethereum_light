@@ -1,0 +1,32 @@
+{
+  "name": "smartchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api-test": "node ./api-test.js",
+    "dev": "nodemon ./api",
+    "dev-peer": "nodemon ./api --peer",
+    "start": "node ./api",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "elliptic": "^6.5.4",
+    "express": "^4.17.1",
+    "jest": "^27.0.4",
+    "js-sha3": "^0.8.0",
+    "pubnub": "^4.32.1",
+    "request": "^2.88.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
